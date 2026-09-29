@@ -1,0 +1,12 @@
+create table employee(
+empid int,
+empname varchar(50),
+salary decimal(10,2),
+department varchar(50)
+);
+insert into employee values(1,'yokesh',400.00,'hr'),(2,'buvaneshram',400.00,'hr'),
+(3,'naveen',400.00,'hr');
+select * from employee;
+
+
+desc employee;
