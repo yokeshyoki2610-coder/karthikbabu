@@ -1,0 +1,27 @@
+CREATE DATABASE Products;
+
+USE Products;
+drop table product_details;
+CREATE TABLE Product_Details (
+    Product_ID INT NOT NULL UNIQUE,
+    Product_Name VARCHAR(100) NOT NULL,
+    Unit_Price DECIMAL(10,2) DEFAULT 1,
+    Stock_Qty INT NOT NULL
+);
+
+DESC Product_Details;
+
+INSERT INTO Product_Details
+(Product_ID, Product_Name, Unit_Price, Stock_Qty)
+VALUES
+(101, 'Laptop', 55000.00, 10),
+(102, 'Mouse', 750.00, 25),
+(103, 'Keyboard', 1200.00, 15),
+(104, 'Monitor', 15000.00, 8),
+(105, 'Headset', 2500.00, 20);
+select * from product_details;
+RENAME TABLE Product_Details TO Pro_Details;
+
+SELECT *
+FROM Pro_Details
+ORDER BY Product_ID DESC;
