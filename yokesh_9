@@ -1,0 +1,37 @@
+use studentdb;
+DELIMITER $$
+
+CREATE FUNCTION GetGrade(mark INT)
+RETURNS VARCHAR(20)
+DETERMINISTIC
+BEGIN
+    DECLARE grade VARCHAR(20);
+
+    IF mark >= 50 AND mark < 60 THEN
+        SET grade = 'Average';
+
+    ELSEIF mark >= 60 AND mark < 70 THEN
+        SET grade = 'Good';
+
+    ELSEIF mark >= 70 AND mark <= 80 THEN
+        SET grade = 'Excellent';
+
+    ELSEIF mark > 80 AND mark <= 100 THEN
+        SET grade = 'Outstanding';
+
+    ELSE
+        SET grade = 'Fail';
+    END IF;
+
+    RETURN grade;
+END $$
+
+DELIMITER ;
+
+
+SELECT GetGrade(55) AS Grade;
+SELECT GetGrade(65) AS Grade;
+SELECT GetGrade(75) AS Grade;
+SELECT GetGrade(90) AS Grade;
+SELECT GetGrade(40) AS Grade;
+    
