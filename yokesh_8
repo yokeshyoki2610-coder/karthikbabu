@@ -1,0 +1,62 @@
+USE StudentDB;
+
+
+INSERT INTO Students (studentname, subject, mark)
+VALUES
+('Arun', 'Tamil', 85),
+('Arun', 'English', 78),
+('Arun', 'Maths', 90),
+('Bala', 'Tamil', 75),
+('Bala', 'English', 82),
+('Bala', 'Maths', 88),
+('Kumar', 'Tamil', 80),
+('Kumar', 'English', 76),
+('Kumar', 'Maths', 95);
+
+
+SELECT studentname, subject, mark
+FROM Students
+WHERE subject IN (
+    SELECT subject
+    FROM Students
+    WHERE subject IN ('Tamil', 'English', 'Maths')
+);
+
+USE CompanyDB;
+    
+CREATE TABLE Manager_Details (
+    Manager_ID INT PRIMARY KEY,
+    ManagerName VARCHAR(50),
+    Dep VARCHAR(30)
+);
+
+CREATE TABLE Employee_Details (
+    Empid INT PRIMARY KEY,
+    empName VARCHAR(50),
+    Dep VARCHAR(30),
+    Manager_ID INT,
+    FOREIGN KEY (Manager_ID)
+        REFERENCES Manager_Details(Manager_ID)
+);
+
+SELECT * FROM Manager_Details;
+
+INSERT INTO Manager_Details
+    (Manager_ID, ManagerName, Dep)
+VALUES
+    (101, 'Ramesh', 'IT'),
+    (102, 'Suresh', 'HR'),
+    (103, 'Karthik', 'Finance');
+    
+    
+SELECT * FROM Employee_Details;
+    
+    INSERT INTO Employee_Details
+    (Empid, empName, Dep, Manager_ID)
+VALUES
+    (1, 'Arun', 'IT', 101),
+    (2, 'Bala', 'IT', 101),
+    (3, 'Priya', 'HR', 102),
+    (4, 'Divya', 'Finance', 103),
+    (5, 'Kumar', 'HR', 102);
+    
