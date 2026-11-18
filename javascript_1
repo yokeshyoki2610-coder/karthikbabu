@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List of Products</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightblue;
+            text-align: center;
+            padding: 30px;
+        }
+
+        h2 {
+            color: darkblue;
+            font-size: 28px;
+        }
+
+        ol {
+            display: inline-block;
+            text-align: left;
+            font-size: 22px;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2><b><i>List of Products</i></b></h2>
+
+    <ol id="productList"></ol>
+
+    <script>
+        let products = [
+            {
+                name: "Dresses",
+                link: "https://www.amazon.in/s?k=dresses"
+            },
+            {
+                name: "Toys",
+                link: "https://www.amazon.in/s?k=toys"
+            },
+            {
+                name: "Utensils",
+                link: "https://www.amazon.in/s?k=kitchen+utensils"
+            }
+        ];
+
+        let list = document.getElementById("productList");
+
+        products.forEach(function(product) {
+
+            let item = document.createElement("li");
+
+            let link = document.createElement("a");
+
+            link.innerHTML = product.name;
+            link.href = product.link;
+            link.target = "_blank";
+
+            item.appendChild(link);
+            list.appendChild(item);
+
+        });
+    </script>
+
+</body>
+</html>
