@@ -1,0 +1,35 @@
+Basic structure of HTML
+
+<!DOCTYPE html>
+
+/html>
+
+<head>
+
+<title> my First webpage
+
+</title>.
+
+</head>
+
+<body>
+
+<h> welcome to HTML </h1>
+
+<P> This is my First webpage </P>
+
+</body>
+
+</html>
+
+explain with Tags
+
+<!DOCTYPE html>-First declaration
+<html>-Root element Of HTML
+<head>-Webpage Information.
+<body>-All visbte Webpage content
+<h1>-Main heading
+
+<P>
+
+Paragrael
