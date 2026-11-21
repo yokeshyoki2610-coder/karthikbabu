@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<h1 style="color: Blue;"> welcome to css</h1>
+
+<P style= "Color : red;"> Hello to world </p>
+
+</body>
+
+</html>
+
+<Style>
+h1  {
+color: blue;
+
+}
+
+P {
+
+Color: Green;
+
+}
+
+</style>
+<html>
+
+<head>
+
+<title> external css </Title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1> welcome to css </h1>
+
+<p> this is external css </P>
+
+</body>
+
+</html>
