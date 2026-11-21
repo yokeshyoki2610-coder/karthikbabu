@@ -1,0 +1,27 @@
+<h2> my Skills </h2>
+<ol>
+
+   <li>HTML</li>
+   <li> css </li>
+   <li> Java </li>
+</ol>
+<h2> My Hobbies </h3>
+
+<ul>
+
+<li> Reading </li>
+<li> playing </li>
+<li> learning </li>
+  
+</ul>
+<dl>
+   <dt> Html </dt>
+<dd> Used Create webpage Software</dd>
+<dt> css </dt>
+
+<dd> Used to desigh webpage </dd>
+</dl>
+
+
+Pair tag = <P> Hello </P>
+un pair Tag = <br>, <hr><img>
