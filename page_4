@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html> 
+<body>
+
+<header>
+     <h1> my website </h1>
+
+</header>
+<nav> 
+
+<a href='#'> Home </a>
+
+<a href='#'> About</a>
+
+</nav>
+<main>
+
+<section>
+
+   <h2> About HTML </h2>
+
+<P> Html creates webpage structure</P>
+
+</section>
+
+</main>
+
+<Footer>
+
+   <p> copy right 2026 </p>
+
+</Footer>
+
+</body>
+
+</html>
+
+<div>
+
+<h2> waliome </h2>
+
+<p>This is a webpage </p>.
+
+</div>
